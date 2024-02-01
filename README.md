@@ -23,17 +23,17 @@ When downloading them directly, make sure to place all files in the same working
 The files code_sensitivity, historical_data_visualization, LVmodel, simulation can be ran independently of eachother and each produces their desired output,
 Though it is important to note that for code_sensitivity and simulation, the file simulation_visualization is also needed to support its visualization
 
-code_sensitivity: investigates the sensitivity of the killProb parameter of our simulation model
-historial_data_visualization: visualizes the historical population amounts of Lynx and Hares
-LVmodel: our analytical Lotka-Volterra model
-simulation: our own agent-based simulational model
-simulation_visualization: the code file that makes the live visualization through timesteps of the simulation possible
+- code_sensitivity: investigates the sensitivity of the killProb parameter of our simulation model
+- historial_data_visualization: visualizes the historical population amounts of Lynx and Hares
+- LVmodel: our analytical Lotka-Volterra model
+- simulation: our own agent-based simulational model
+- simulation_visualization: the code file that makes the live visualization through timesteps of the simulation possible
 
 
 ### Authors
-Luuk van Steenoven
-Miji Trenkel 
-Tristan van Weeren
+- Luuk van Steenoven
+- Miji Trenkel 
+- Tristan van Weeren
 
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
