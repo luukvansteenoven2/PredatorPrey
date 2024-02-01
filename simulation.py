@@ -1,14 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jan 15 13:58:08 2024
-
-@author: trist
-"""
-
 import matplotlib.pyplot as plt
 import math
 import numpy as np
-import vis_code_luuk
+import simulation_visualization
 from scipy.signal import find_peaks
 
 
@@ -433,7 +426,7 @@ def run_simulation(mountainOn, forestOn, visualize = True, seed=1):
     file = open(fileName + '.csv', 'w')
     sim = Model(mountainOn=mountainOn, forestOn=forestOn)
     if visualize:
-        vis = vis_code_luuk.Visualization(sim.height, sim.width)
+        vis = simulation_visualization.Visualization(sim.height, sim.width)
     print('Starting simulation')
     while t < timeSteps:
         [d1, d2] = sim.update()  # Catch the data
