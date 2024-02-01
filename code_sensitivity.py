@@ -8,8 +8,8 @@ Created on Tue Jan 30 16:01:02 2024
 import matplotlib.pyplot as plt
 import math
 import numpy as np
-import vis_code_luuk
 from scipy.signal import find_peaks
+import simulation_visualization
 
 
 class Model: 
@@ -417,7 +417,7 @@ def run_simulation(mountainOn, forestOn):
     """
     Set a random seed, such that we have the same simulation each time
     """
-    np.random.seed(0)
+    np.random.seed(1)
     """
     Simulation parameters
     """
@@ -443,7 +443,7 @@ def run_simulation(mountainOn, forestOn):
     for i in range(len(fileNames)):
         file = open(fileNames[i] + '.csv', 'w')
         sim = Model(killProb=killProbs[i], mountainOn=mountainOn, forestOn=forestOn)
-        vis = vis_code_luuk.Visualization(sim.height, sim.width)
+        vis = simulation_visualization.Visualization(sim.height, sim.width)
         print('Starting simulation')       
         t = 0
         while t < timeSteps:
